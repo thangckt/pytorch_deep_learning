@@ -31,7 +31,7 @@ jobs:
       - name: Install dependencies  # mkdocs-jupyter can cause broken in tabs-header
         run: |
           pip install git+https://github.com/thangckt/mkdocs-material.git@master
-          pip install mknotebooks
+          pip install mkdocs-jupyter
           pip install pillow cairosvg # install social share card plugins
 
 

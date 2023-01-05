@@ -93,8 +93,8 @@ markdown_extensions:
 
 ## Plugins
 plugins:
-  - mknotebooks:
-      execute: false
+  - mkdocs-jupyter:
+      include_source: True
       # theme: dark
   - search
   - social
