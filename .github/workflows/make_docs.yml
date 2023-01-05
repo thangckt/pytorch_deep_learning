@@ -42,6 +42,7 @@ jobs:
           cp extras/pytorch_extra_resources.md docs/
           cp extras/pytorch_cheatsheet.ipynb docs/
           cp extras/pytorch_most_common_errors.ipynb docs/
+          cp slides/*.pdf docs/slides/
 
 
       - name: MkDocs gh-deploy    # This will create `gh-pages` branch contain `mkdocs-site`
