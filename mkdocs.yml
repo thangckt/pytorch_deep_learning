@@ -28,9 +28,9 @@ theme:
     - search.suggest
     - toc.follow
     # - toc.integrate
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.tabs.header   # only in extended theme
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    # - navigation.tabs.header   # only in extended theme
     ### new in v9
     - content.action.edit
     - navigation.footer
