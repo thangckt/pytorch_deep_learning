@@ -1,10 +1,10 @@
 name: make_docs
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: 
+    branches:
        - main
 
   # Allows you to run this workflow manually from the Actions tab
@@ -23,18 +23,17 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
         with:
-          python-version: 3.7
+          python-version: 3.10
       - uses: actions/cache@v2
         with:
           key: ${{ github.ref }}
           path: .cache
-      - run: pip install git+https://${{ secrets.GH_MATERIAL_MKDOCS_TOKEN }}@github.com/squidfunk/mkdocs-material-insiders.git
-      - run: pip install mkdocs-jupyter
-      - run: pip install pillow cairosvg # install social share card plugins
-#       - run: pip install jupyter
-      - run: cp *.ipynb docs/ # copy all notebooks to docs folder
-      - run: cp 05_pytorch_going_modular.md docs/ # copy markdown section for 05 to docs folder
-      - run: cp extras/pytorch_extra_resources.md docs/
-      - run: cp extras/pytorch_cheatsheet.ipynb docs/
-      - run: cp extras/pytorch_most_common_errors.ipynb docs/
-      - run: mkdocs gh-deploy --force
+      - name: Install dependencies  # mkdocs-jupyter can cause broken in tabs-header
+        run: |
+          pip install git+https://github.com/thangckt/mkdocs-material.git@master
+          pip install mkdocs-jupyter
+          pip install pillow cairosvg # install social share card plugins
+
+      - name: MkDocs gh-deploy    # This will create `gh-pages` branch contain `mkdocs-site`
+        run: |
+          mkdocs gh-deploy --force --verbose

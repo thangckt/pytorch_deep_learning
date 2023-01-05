@@ -20,11 +20,13 @@ There are two setup options. One is easier than the other but the other offers m
 Google Colab is a free online interactive compute engine (based on Jupyter Notebooks, the data science standard).
 
 The benefits of Google Colab are:
+
 * Almost zero setup (Google Colab comes with PyTorch and many other data science packages such as pandas, NumPy and Matplotlib already installed)
 * Share your work with a link
 * Free access to GPUs (GPUs make your deep learning code faster), with a paid option to access *more* GPU power
 
 The cons of Google Colab are:
+
 * Timeouts (most Colab notebooks only preserve state for 2-3 hours max, though this can increase with the paid option)
 * No access to local storage (though there are ways around this)
 * Not as well setup for scripting (turning your code into modules)
@@ -49,7 +51,7 @@ To begin with Google Colab, I'd first go through the [Introduction to Google Col
 
 After you've gotten familiar with the Google Colab interface, you can run any of the course notebooks directly in Google Colab by pressing the "Open in Colab" button at the top of the online book version or the GitHub version.
 
-![open a course notebook in Google Colab via open in Colab button](https://raw.githubusercontent.com/mrdbourke/pytorch-deep-learning/main/images/setup-open-in-colab-cropped.gif)
+![open a course notebook in Google Colab via open in Colab button](https://raw.githubusercontent.com/thangckt/pytorch-deep-learning/main/images/setup-open-in-colab-cropped.gif)
 
 If you'd like to make a copy of the notebook and store it on your Google Drive, you can press the "Copy to Drive" button.
 
@@ -57,9 +59,9 @@ If you'd like to make a copy of the notebook and store it on your Google Drive, 
 
 You can also enter any notebook link from GitHub directly in Google Colab and get the same result.
 
-![open a course notebook in Google Colab via GitHub link](https://raw.githubusercontent.com/mrdbourke/pytorch-deep-learning/main/images/setup-open-notebook-in-colab-via-link.png)
+![open a course notebook in Google Colab via GitHub link](https://raw.githubusercontent.com/thangckt/pytorch-deep-learning/main/images/setup-open-notebook-in-colab-via-link.png)
 
-Doing this will give you a runable notebook right in Google Colab. 
+Doing this will give you a runable notebook right in Google Colab.
 
 Though this should only be used for testing purposes, as when going through the course, I highly recommend you **write the code yourself**, rather than running existing code.
 
@@ -67,7 +69,7 @@ Though this should only be used for testing purposes, as when going through the 
 
 To get access to a CUDA-enabled NVIDIA GPU (CUDA is the programming interface that allows deep learning code to run faster on GPUs) in Google Colab you can go to `Runtime -> Change runtime type -> Hardware Accelerator -> GPU` (note: this will require the runtime to restart).
 
-![Getting access to a GPU in Google Colab](https://raw.githubusercontent.com/mrdbourke/pytorch-deep-learning/main/images/setup-get-gpu-colab-cropped.gif)
+![Getting access to a GPU in Google Colab](https://raw.githubusercontent.com/thangckt/pytorch-deep-learning/main/images/setup-get-gpu-colab-cropped.gif)
 
 To check whether you have a GPU active in Google Colab you can run:
 
@@ -90,7 +92,7 @@ If PyTorch can see the GPU on Google Colab, the above will print `True`.
 
 > **Note:** A reminder this is not a replacement for the [PyTorch documentation for getting setup locally](https://pytorch.org/get-started/locally/). This is only one way of getting setup (there are many) and designed specifically for this course.
 
-This **setup is focused on Linux systems** (the most common operating system in the world), if you are running Windows or macOS, you should refer to the PyTorch documentation. 
+This **setup is focused on Linux systems** (the most common operating system in the world), if you are running Windows or macOS, you should refer to the PyTorch documentation.
 
 This setup also **expects you to have access to a NVIDIA GPU**.
 
@@ -101,30 +103,39 @@ As a machine learning engineer, I use it almost daily. It works for a large amou
 Let's begin.
 
 ### Setup steps locally for a Linux system with a GPU
+
 TK TODO - add step for install CUDA drivers
 TK image - overall setup of the course environment (e.g. Jupyter Lab inside conda env)
 
 1. [Install Miniconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html) (you can use Anaconda if you already have it), the main thing is you need access to `conda` on the command line. Make sure to follow all the steps in the Miniconda installation guide before moving onto the next step.
 2. Make a directory for the course materials, you can name it what you want and then change into it. For example:
+
 ```
 mkdir ztm-pytorch-course
 cd ztm-pytorch-course
 ```
+
 3. Create a `conda` environment in the directory you just created. The following command will create a `conda` enviroment that lives in the folder called `env` which lives in the folder you just created (e.g. `ztm-pytorch-course/env`). Press `y` when the command below asks `y/n?`.
+
 ```
 conda create --prefix ./env python=3.8
 ```
+
 4. Activate the environment you just created.
+
 ```
 conda activate ./env
 ```
+
 5. Install the code dependencies you'll need for the course such as PyTorch and CUDA Toolkit for running PyTorch on your GPU. You can run all of these at the same time (**note:** this is specifically for Linux systems with a NVIDIA GPU, for other options see the [PyTorch setup documentation](https://pytorch.org/get-started/locally/)):
+
 ```
 conda install -c pytorch pytorch=1.10.0 torchvision cudatoolkit=11.3 -y
 conda install -c conda-forge jupyterlab torchinfo torchmetrics -y
 conda install -c anaconda pip -y
 conda install pandas matplotlib scikit-learn -y
 ```
+
 6. Verify the installation ran correctly by running starting a Jupyter Lab server:
 
 ```bash
@@ -132,6 +143,7 @@ jupyter lab
 ```
 
 7. After Jupyter Lab is running, start a Jupyter Notebook and running the following piece of code in a cell.
+
 ```python
 import pandas as pd
 import numpy as np
@@ -149,4 +161,4 @@ print(torch.cuda.is_available())
 
 If the above code runs without errors, you should be ready to go.
 
-If you do run into an error, please refer to the [Learn PyTorch GitHub Discussions page](https://github.com/mrdbourke/pytorch-deep-learning/discussions) and ask a question or the [PyTorch setup documentation page](https://pytorch.org/get-started/locally/).
+If you do run into an error, please refer to the [Learn PyTorch GitHub Discussions page](https://github.com/thangckt/pytorch-deep-learning/discussions) and ask a question or the [PyTorch setup documentation page](https://pytorch.org/get-started/locally/).

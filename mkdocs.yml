@@ -1,36 +1,122 @@
 site_name: Zero to Mastery Learn PyTorch for Deep Learning
-site_url: https://www.learnpytorch.io
+site_author: thangckt
+# site_url: https://www.learnpytorch.io
 site_description: Learn important machine learning concepts hands-on by writing PyTorch code.
 
-repo_url: https://github.com/mrdbourke/pytorch-deep-learning/
-repo_name: mrdbourke/pytorch_deep_learning
+# repo_url: https://github.com/mrdbourke/pytorch-deep-learning/
+# repo_name: mrdbourke/pytorch_deep_learning
+# edit_uri: ""
 
+## Copyright
+copyright: Copyright &copy; 2022 <a href="https://thangckt.github.io">thangckt</a>
+
+## Configuration
 theme:
-  name: material
-  logo: assets/ztm-logo-and-pytorch-logo.png
-  favicon: assets/ztm-logo-and-pytorch-logo.png
+  name: "material"     #  "material"    "mkdocs"    "readthedocs"     'rtd-dropdown'   windmill  bootswatch
+  logo: 1images/one-note-128-o.png            # one-note-128-o.png        my_picture3x3.jpg    one-note-128-y.png  snake1  monkey
+  favicon: 1images/one-note-128-o.png
+  highlightjs: true
   features:
-    - navigation.instant
+    - content.code.annotate
+    # - navigation.expand
+    # - navigation.sections
+    - navigation.indexes
+    # - navigation.instant
+    - navigation.tracking
     - navigation.top
-  palette:
-    primary: black
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tabs.header   # only in extended theme
+    ### new in v9
+    - content.action.edit
+    - navigation.footer
 
+
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      # primary: blue grey   #  blue grey, indigo
+      # accent: indigo
+      toggle:
+        icon: material/eye
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      # primary: blue grey   #  blue grey, indigo
+      # accent: indigo
+      toggle:
+        icon: material/eye-outline
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+
+## Customization
+extra:
+  generator: false
+  analytics:
+    provider: google
+    property: G-QM7DWGY7ZT
+  social:
+    - icon: fontawesome/solid/envelope
+      link: mailto:<thanckt@gmail.com>
+      name: Email to thangckt
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/thangckt
+      name: thangckt on Telegram
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/thangckt5
+      name: thangckt on Facebook
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/thangckt
+      name: thangckt on Linkedin
+    - icon: fontawesome/brands/orcid
+      link: https://orcid.org/0000-0001-9826-5397
+      name: thangckt on ORCID
+
+## Extensions
 markdown_extensions:
+  - admonition
   - meta
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
-  
+
+## Plugins
 plugins:
- - mkdocs-jupyter:
-    include_source: True
- - search
- - social
+  - mkdocs-jupyter:
+      include_source: True
+      theme: dark
 
-edit_uri: ""
+  - search
+  - autorefs
+  - social
 
+
+
+### Extra theme
+extra_javascript:
+  - _extend_theme/javascripts/gg_adsense.js
+extra_css:
+  - _extend_theme/extra_css/full_width.css
+  - _extend_theme/extra_css/font_size.css
+
+
+
+
+###=======================================
+### Site content
+###=======================================
+## Page tree
 nav:
+
   - Home: 'index.md'
   - 00. Getting Started with PyTorch: '00_pytorch_fundamentals.ipynb'
   - 01. PyTorch Machine Learning Workflow: '01_pytorch_workflow.ipynb'
@@ -46,11 +132,4 @@ nav:
   - PyTorch Cheatsheet: 'pytorch_cheatsheet.ipynb'
   - Three Most Common PyTorch Errors: 'pytorch_most_common_errors.ipynb'
 
-extra:
-  social:
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/mrdbourke
-    - icon: fontawesome/brands/github
-      link: https://github.com/mrdbourke/pytorch-deep-learning
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/channel/UCr8O8l5cCX85Oem1d18EezQ
+
