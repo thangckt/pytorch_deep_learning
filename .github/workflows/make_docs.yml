@@ -31,18 +31,18 @@ jobs:
       - name: Install dependencies  # mkdocs-jupyter can cause broken in tabs-header
         run: |
           pip install git+https://github.com/thangckt/mkdocs-material.git@master
-          pip install mkdocs-jupyter
+          pip install mknotebooks
           pip install pillow cairosvg # install social share card plugins
 
 
-      - name: Copy files to folder /docs
-        run: |
-          cp *.ipynb docs/ # copy all notebooks to docs folder
-          cp 05_pytorch_going_modular.md docs/ # copy markdown section for 05 to docs folder
-          cp extras/pytorch_extra_resources.md docs/
-          cp extras/pytorch_cheatsheet.ipynb docs/
-          cp extras/pytorch_most_common_errors.ipynb docs/
-          cp slides/*.pdf docs/slides/
+      # - name: Copy files to folder /docs
+      #   run: |
+      #     cp *.ipynb docs/ # copy all notebooks to docs folder
+      #     cp 05_pytorch_going_modular.md docs/ # copy markdown section for 05 to docs folder
+      #     cp extras/pytorch_extra_resources.md docs/
+      #     cp extras/pytorch_cheatsheet.ipynb docs/
+      #     cp extras/pytorch_most_common_errors.ipynb docs/
+      #     cp slides/*.pdf docs/slides/
 
 
       - name: MkDocs gh-deploy    # This will create `gh-pages` branch contain `mkdocs-site`
