@@ -95,7 +95,6 @@ plugins:
       include_source: True
       theme: dark
   - search
-  - autorefs
   - social
 
 ### Extra theme
