@@ -94,12 +94,9 @@ plugins:
   - mkdocs-jupyter:
       include_source: True
       theme: dark
-
   - search
   - autorefs
   - social
-
-
 
 ### Extra theme
 extra_javascript:
