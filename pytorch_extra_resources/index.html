@@ -1,0 +1,947 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Learn important machine learning concepts hands-on by writing PyTorch code.">
+      
+      
+        <meta name="author" content="thangckt">
+      
+      
+      <link rel="icon" href="../assets/ztm-logo-and-pytorch-logo.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>PyTorch Extra Resources - Zero to Mastery Learn PyTorch for Deep Learning</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../_extend_theme/extra_css/full_width.css">
+    
+      <link rel="stylesheet" href="../_extend_theme/extra_css/font_size.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-QM7DWGY7ZT"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-QM7DWGY7ZT",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-QM7DWGY7ZT",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="PyTorch Extra Resources - Zero to Mastery Learn PyTorch for Deep Learning" >
+      
+        <meta  property="og:description"  content="Learn important machine learning concepts hands-on by writing PyTorch code." >
+      
+        <meta  property="og:image"  content="./assets/images/social/pytorch_extra_resources.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="None" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="PyTorch Extra Resources - Zero to Mastery Learn PyTorch for Deep Learning" >
+      
+        <meta  name="twitter:description"  content="Learn important machine learning concepts hands-on by writing PyTorch code." >
+      
+        <meta  name="twitter:image"  content="./assets/images/social/pytorch_extra_resources.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pytorch-extra-resources" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Zero to Mastery Learn PyTorch for Deep Learning" class="md-header__button md-logo" aria-label="Zero to Mastery Learn PyTorch for Deep Learning" data-md-component="logo">
+      
+  <img src="../assets/ztm-logo-and-pytorch-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Zero to Mastery Learn PyTorch for Deep Learning
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              PyTorch Extra Resources
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
+            </label>
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m0-4.5c5 0 9.27 3.11 11 7.5-1.73 4.39-6 7.5-11 7.5S2.73 16.39 1 12c1.73-4.39 6-7.5 11-7.5M3.18 12a9.821 9.821 0 0 0 17.64 0 9.821 9.821 0 0 0-17.64 0Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Zero to Mastery Learn PyTorch for Deep Learning" class="md-nav__button md-logo" aria-label="Zero to Mastery Learn PyTorch for Deep Learning" data-md-component="logo">
+      
+  <img src="../assets/ztm-logo-and-pytorch-logo.png" alt="logo">
+
+    </a>
+    Zero to Mastery Learn PyTorch for Deep Learning
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_pytorch_fundamentals/" class="md-nav__link">
+        00. PyTorch Fundamentals
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_pytorch_workflow/" class="md-nav__link">
+        01. PyTorch Workflow Fundamentals
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_pytorch_classification/" class="md-nav__link">
+        02. PyTorch Neural Network Classification
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_pytorch_computer_vision/" class="md-nav__link">
+        03. PyTorch Computer Vision
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_pytorch_custom_datasets/" class="md-nav__link">
+        04. PyTorch Custom Datasets
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_pytorch_going_modular/" class="md-nav__link">
+        05. PyTorch Going Modular
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_pytorch_transfer_learning/" class="md-nav__link">
+        06. PyTorch Transfer Learning
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_pytorch_experiment_tracking/" class="md-nav__link">
+        07. PyTorch Experiment Tracking
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_pytorch_paper_replicating/" class="md-nav__link">
+        08. PyTorch Paper Replicating
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_pytorch_model_deployment/" class="md-nav__link">
+        09. PyTorch Model Deployment
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          PyTorch Extra Resources
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        PyTorch Extra Resources
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pure-pytorch-resources" class="md-nav__link">
+    🔥 Pure PyTorch resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#libraries-that-make-pure-pytorch-betteradd-features" class="md-nav__link">
+    📈 Libraries that make pure PyTorch better/add features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#books-for-pytorch" class="md-nav__link">
+    📖 Books for PyTorch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources-for-machine-learning-and-deep-learning-engineering" class="md-nav__link">
+    🏗 Resources for Machine Learning and Deep Learning Engineering
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-to-find-datasets" class="md-nav__link">
+    🗃 Where to find datasets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-for-deep-learning-domains" class="md-nav__link">
+    Tools for Deep Learning Domains
+  </a>
+  
+    <nav class="md-nav" aria-label="Tools for Deep Learning Domains">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#computer-vision" class="md-nav__link">
+    😎 Computer Vision
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#natural-language-processing-nlp" class="md-nav__link">
+    📚 Natural Language Processing (NLP)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#speech-and-audio" class="md-nav__link">
+    🎤 Speech and Audio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommendation-engines" class="md-nav__link">
+    ❓Recommendation Engines
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-series" class="md-nav__link">
+    ⏳ Time Series
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-get-a-job" class="md-nav__link">
+    👩‍💻 How to get a job
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pytorch_cheatsheet/" class="md-nav__link">
+        PyTorch Cheatsheet
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pytorch_most_common_errors/" class="md-nav__link">
+        The Three Most Common Errors in PyTorch
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pure-pytorch-resources" class="md-nav__link">
+    🔥 Pure PyTorch resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#libraries-that-make-pure-pytorch-betteradd-features" class="md-nav__link">
+    📈 Libraries that make pure PyTorch better/add features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#books-for-pytorch" class="md-nav__link">
+    📖 Books for PyTorch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources-for-machine-learning-and-deep-learning-engineering" class="md-nav__link">
+    🏗 Resources for Machine Learning and Deep Learning Engineering
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-to-find-datasets" class="md-nav__link">
+    🗃 Where to find datasets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-for-deep-learning-domains" class="md-nav__link">
+    Tools for Deep Learning Domains
+  </a>
+  
+    <nav class="md-nav" aria-label="Tools for Deep Learning Domains">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#computer-vision" class="md-nav__link">
+    😎 Computer Vision
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#natural-language-processing-nlp" class="md-nav__link">
+    📚 Natural Language Processing (NLP)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#speech-and-audio" class="md-nav__link">
+    🎤 Speech and Audio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommendation-engines" class="md-nav__link">
+    ❓Recommendation Engines
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-series" class="md-nav__link">
+    ⏳ Time Series
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-get-a-job" class="md-nav__link">
+    👩‍💻 How to get a job
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="pytorch-extra-resources">PyTorch Extra Resources</h1>
+<p>Despite the full Zero to Mastery PyTorch course being over 40 hours, you’ll likely finish being excited to learn more.</p>
+<p>After all, the course is a PyTorch momentum builder.</p>
+<p>The following resources are collected to extend the course.</p>
+<p>A warning though: there’s a lot here.</p>
+<p>Best to choose 1 or 2 resources from each section (or less) to explore more. And put the rest in your bag for later. </p>
+<p>Which one's the best? </p>
+<p>Well, if they’ve made it on this list, you can consider them a quality resource.</p>
+<p>Most are PyTorch-specific, fitting extensions to the course but a couple are non PyTorch-specific, however, they’re still valuable in the world of machine learning.</p>
+<h2 id="pure-pytorch-resources">🔥 Pure PyTorch resources</h2>
+<ul>
+<li><a href="https://pytorch.org/blog/"><strong>PyTorch blog</strong></a> — Stay up to date on the latest from PyTorch right from the source. I check the blog once a month or so for updates.</li>
+<li><a href="https://pytorch.org/docs"><strong>PyTorch documentation</strong></a> — We’ll have explored this plenty throughout the course but there’s still a large amount we haven’t touched. No trouble, explore often and when necessary.</li>
+<li><a href="https://pytorch.org/tutorials/recipes/recipes/tuning_guide.html#"><strong>PyTorch Performance Tuning Guide</strong></a> — One of the first things you’ll likely want to do after the course is to make your PyTorch models faster (training and inference), the PyTorch Performance Tuning Guide helps you do just that.</li>
+<li><a href="https://pytorch.org/tutorials/recipes/recipes_index.html"><strong>PyTorch Recipes</strong></a> — PyTorch recipes is a collection of small tutorials to showcase common PyTorch features and workflows you may want to create, such as <a href="https://pytorch.org/tutorials/recipes/recipes/loading_data_recipe.html">Loading Data in PyTorch</a> and <a href="https://pytorch.org/tutorials/recipes/recipes/saving_and_loading_models_for_inference.html">Saving and Loading models for Inference in PyTorch</a>.</li>
+<li><a href="https://pytorch.org/ecosystem/"><strong>PyTorch Ecosystem</strong></a> - A vast collection of tools that build on top of pure PyTorch to add specialized features for different fields, from <a href="https://pytorch3d.org">PyTorch3D</a> for 3D computer vision to <a href="https://github.com/albumentations-team/albumentations">Albumentations</a> for fast data augmentation to <a href="https://torchmetrics.readthedocs.io/en/stable/">TorchMetrics</a> for model evaluation (thank you <a href="https://github.com/mrdbourke/pytorch-deep-learning/issues/64#issuecomment-1175164531">for the tip</a> Alessandro).</li>
+<li><a href="https://code.visualstudio.com/docs/datascience/pytorch-support"><strong>Setting up PyTorch in VSCode</strong></a> — VSCode is one of the most popular IDEs out there. And its PyTorch support is getting better and better. Throughout the Zero to Mastery PyTorch course, we use Google Colab because of its ease of use. But chances are you’ll be developing in an IDE like VSCode soon.</li>
+</ul>
+<h2 id="libraries-that-make-pure-pytorch-betteradd-features">📈 Libraries that make pure PyTorch better/add features</h2>
+<p>The course focuses on pure PyTorch (using minimal external libraries) because if you know how to write plain PyTorch, you can learn to use the various extension libraries.</p>
+<ul>
+<li><a href="https://github.com/fastai/fastai"><strong>fast.ai</strong></a> — fastai is an open-source library that takes care of many of the boring parts of building neural networks and makes creating state-of-the-art models possible with a few lines of code. Their free library, <a href="https://course.fast.ai">course</a> and <a href="https://docs.fast.ai">documentation</a> are all world-class.</li>
+<li><a href="https://github.com/mosaicml/composer"><strong>MosaicML for more efficient model training</strong></a> — The faster you can train models, the faster you can figure out what works and what doesn’t. MosaicML’s open-source <code>Composer</code> library helps you train neural networks with PyTorch faster by implementing speedup algorithms behind the scenes which means you can get better results out of your existing PyTorch models faster. All of their code is open-source and their docs are fantastic.</li>
+<li><a href="https://www.pytorchlightning.ai"><strong>PyTorch Lightning for reducing boilerplate</strong></a> — PyTorch Lightning takes care of many of the steps that you often have to do by hand in vanilla PyTorch, such as writing a training and test loop, model checkpointing, logging and more. PyTorch Lightning builds on top of PyTorch to allow you to make PyTorch models with less code.</li>
+</ul>
+<p><img alt="Libraries that extend/make pure PyTorch better." src="https://raw.githubusercontent.com/mrdbourke/pytorch-deep-learning/main/images/extras-001-libraries-to-make-pytorch-better-or-faster.jpeg" /></p>
+<p><em>Libraries that extend/make pure PyTorch better.</em></p>
+<h2 id="books-for-pytorch">📖 Books for PyTorch</h2>
+<ul>
+<li><a href="https://www.amazon.com/Machine-Learning-PyTorch-Scikit-Learn-scikit-learn-ebook-dp-B09NW48MR1/dp/B09NW48MR1/"><strong>Machine Learning with PyTorch and Scikit-Learn: Develop machine learning and deep learning models with Python by Sebastian Raschka</strong></a> — A fantastic introduction to machine learning and deep learning. Starting with traditional machine learning algorithms using Scikit-Learn for problems with structured data (tabular or rows and columns or Excel-style) and then switching to how to use PyTorch for deep learning on unstructured data (such as computer vision and natural language processing).</li>
+<li><a href="https://pytorchstepbystep.com"><strong>PyTorch Step-by-Step series by Daniel Voigt Godoy</strong></a> — Where the Zero to Mastery PyTorch course works from a code-first perspective, the Step-by-Step series covers PyTorch and deep learning from a concept-first perspective with code examples to go along. With three editions, Fundamentals, Computer Vision and Sequences (NLP), the step-by-step series is one of my favourite resources for learning PyTorch from the ground up.</li>
+<li><a href="https://d2l.ai"><strong>Dive into Deep Learning book</strong></a> — Possibly one of the most comprehensive resources on the internet for deep learning concepts along with code examples in PyTorch, TensorFlow and Gluon. And all for free! For example, take a look at the author’s explanation of the <a href="https://d2l.ai/chapter_attention-mechanisms-and-transformers/vision-transformer.html">Vision Transformer</a> we cover in <a href="https://www.learnpytorch.io/08_pytorch_paper_replicating/">08. PyTorch Paper Replicating</a>.</li>
+<li><strong>Bonus:</strong> The <a href="https://course.fast.ai">fast.ai course</a> (available free online) also comes as a freely available online book, <a href="https://course.fast.ai/Resources/book.html">Deep Learning for Coders with fastai &amp; PyTorch</a>.</li>
+</ul>
+<p><img alt="Textbooks to learn more about PyTorch as well as deep learning in general." src="https://raw.githubusercontent.com/mrdbourke/pytorch-deep-learning/main/images/extras-002-books-for-pytorch.jpeg" /></p>
+<p><em>Textbooks to learn more about PyTorch as well as deep learning in general.</em></p>
+<h2 id="resources-for-machine-learning-and-deep-learning-engineering">🏗 Resources for Machine Learning and Deep Learning Engineering</h2>
+<p>Machine Learning Engineering (also referred to as MLOps or ML operations) is the practice of getting the models you create into the hands of others. This may mean via a public app or working behind the scenes to make business decisions.</p>
+<p>The following resources will help you learn more about the steps around deploying a machine learning model.</p>
+<ul>
+<li><strong><a href="https://www.amazon.com/Designing-Machine-Learning-Systems-Production-Ready/dp/1098107969">Designing Machine Learning Systems book by Chip Huyen</a></strong> — If you want to build an ML system, it’d be good to know how others have done it. Chip’s book focuses less on building a single machine learning model (though there’s plenty of content on that in the book) but rather building a cohesive ML system. It covers everything from data engineering to model building to model deployment (online and offline) to model monitoring. Even better, it’s a joy to read, you can tell the book is written by a writer (Chip has previously authored several books).</li>
+<li><strong><a href="https://madewithml.com">Made With ML by Goku Mohandas</a></strong> — Whenever I want to learn or reference something to do with MLOps, I go to <a href="https://madewithml.com/#mlops">madewithml.com/mlops</a> and see if there’s a lesson on it. Made with ML not only teaches you the  fundamentals of many different ML models but goes through how to build an end-to-end ML system with plenty of code and tooling examples.</li>
+<li><strong><a href="http://www.mlebook.com">The Machine Learning Engineering book by Andriy Burkov</a></strong> — Even though this book is available to read online for free, I bought it as soon as it came out. I’ve used it as a reference and to learn more about ML engineering so much it’s basically always on my desk/within arms reach. Burkov does an excellent job at getting to the point and referencing further materials when necessary.</li>
+<li><strong><a href="https://fullstackdeeplearning.com">Full Stack Deep Learning course</a></strong> — I first did this course in 2021. And it’s continued to evolve to cover the latest and greatest tools in the field. It’ll teach you how to plan a project to solve an ML problem, how to source or create data, how to troubleshoot an ML project when it goes wrong and most of all, how to build ML-powered products.</li>
+</ul>
+<p><img alt="Resources to improve your machine learning engineering skills (all of the steps that go around building a machine learning model)." src="https://raw.githubusercontent.com/mrdbourke/pytorch-deep-learning/main/images/extras-003-places-to-learn-ml-ops.jpeg" /></p>
+<p><em>Resources to improve your machine learning engineering skills (all of the steps that go around building a machine learning model).</em></p>
+<h2 id="where-to-find-datasets">🗃 Where to find datasets</h2>
+<p>Machine learning projects begin with data. </p>
+<p>No data, no ML. </p>
+<p>The following resources are some of the best for finding open-source and often ready-to-use datasets on a wide range of topics and problem domains.</p>
+<ul>
+<li><a href="https://paperswithcode.com/datasets"><strong>Paperswithcode Datasets</strong></a> — Search for the most used and common machine learning benchmark datasets, understand what they contain, where they came from and where they can be found. You can often also see the current best-performing model on each dataset.</li>
+<li><a href="https://huggingface.co/docs/datasets"><strong>HuggingFace Datasets</strong></a> — Not just a resource to find datasets across a wide range of problem domains but also a library to download and start using them within a few lines of code.</li>
+<li><strong><a href="https://www.kaggle.com/datasets">Kaggle Datasets</a></strong> — Find all kinds of datasets that usually accompany Kaggle Competitions, many of which come straight out of industry.</li>
+<li><strong><a href="https://datasetsearch.research.google.com">Google Dataset search</a></strong> — Just like searching Google but specifically for datasets.</li>
+</ul>
+<p>These should be plenty to get started, however, for your own specific problems you’ll likely want to build your own dataset.</p>
+<p><img alt="Places to find existing and open-source datasets for a variety of problem spaces." src="https://raw.githubusercontent.com/mrdbourke/pytorch-deep-learning/main/images/extras-004-places-to-find-datasets.jpeg" /></p>
+<p><em>Places to find existing and open-source datasets for a variety of problem spaces.</em></p>
+<h2 id="tools-for-deep-learning-domains">Tools for Deep Learning Domains</h2>
+<p>The following resources are focused on libraries and pretrained models for specific problem domains such as computer vision and recommendation engines/systems.</p>
+<h3 id="computer-vision">😎 Computer Vision</h3>
+<p>We cover computer vision in <a href="https://www.learnpytorch.io/03_pytorch_computer_vision/">03. PyTorch Computer Vision</a> but as a quick recap, computer vision is the art of getting computers to see. </p>
+<p>If your data is visual, images, x-rays, production line video or even hand-written documents, it may be a computer vision problem.</p>
+<ul>
+<li><strong><a href="https://pytorch.org/vision/stable/index.html">TorchVision</a></strong> — PyTorch’s resident computer vision library. Find plenty of methods for loading vision data as well as plenty of pretrained computer vision models to use for your own problems.</li>
+<li><a href="https://github.com/rwightman/pytorch-image-models"><strong>timm (Torch Image Models) library</strong></a> — One of the most comprehensive computer vision libraries and resources for pretrained computer vision models. Almost all new research in that uses PyTorch for computer vision leverages the <code>timm</code> library in some way.</li>
+<li><strong><a href="https://github.com/ultralytics/yolov5">Yolov5 for object detection</a></strong> — If you’re looking to build an object detection model in PyTorch, the <code>yolov5</code> GitHub repository might be the quickest way to get started.</li>
+<li><strong><a href="https://github.com/facebookresearch/vissl">VISSL (Vision Self-Supervised Learning) library</a></strong> — Self-supervised learning is the art of getting data to learn patterns in itself. Rather than providing labels for different classes and learning a representation like that, self-supervised learning tries to replicate similar results without labels. VISSL provides an easy to use way to get started using self-supervised learning computer vision models with PyTorch.</li>
+</ul>
+<h3 id="natural-language-processing-nlp">📚 Natural Language Processing (NLP)</h3>
+<p>Natural language processing involves finding patterns in text. </p>
+<p>For example, you might want to extract important entities in support tickets or classify a document into different categories.</p>
+<p>If your problem involves a large of amount of text, you’ll want to look into the following resources.</p>
+<ul>
+<li><strong><a href="https://pytorch.org/text/stable/index.html">TorchText</a></strong> — PyTorch’s in-built domain library for text. Like TorchVision, it contains plenty of pre-built methods for loading data and a healthy collection of pretrained models you can adapt to your own problems.</li>
+<li><a href="https://huggingface.co/docs/transformers/index"><strong>HuggingFace Transformers library</strong></a> — The HuggingFace Transformers library has more stars on GitHub than the PyTorch library itself. And there’s a reason. Not that HuggingFace Transformers is better than PyTorch but because it’s the best at what it does: provide data loaders and pretrained state-of-the-art models for NLP (and a whole bunch more).</li>
+<li><strong>Bonus:</strong> To learn more about how to HuggingFace Transformers library and all of the pieces around it, the HuggingFace team <a href="https://huggingface.co/course/chapter1/1">offer a free online course</a>.</li>
+</ul>
+<h3 id="speech-and-audio">🎤 Speech and Audio</h3>
+<p>If your problem deals with audio files or speech data, such as trying to classify a sound or transcribe speech into text, you’ll want to look into the following resources.</p>
+<ul>
+<li><a href="https://pytorch.org/audio/stable/index.html"><strong>TorchAudio</strong></a> — PyTorch’s domain library for everything audio. Find in-built methods for preparing data and pre-built model architectures for finding patterns in audio data.</li>
+<li><strong><a href="https://speechbrain.github.io">SpeechBrain</a></strong> — An open-source library built on top of PyTorch to handle speech problems such as recognition (turning speech into text), speech enhancement, speech processing, text-to-speech and more. You can try out many of their <a href="https://huggingface.co/speechbrain">models on the HuggingFace Hub</a>.</li>
+</ul>
+<h3 id="recommendation-engines">❓Recommendation Engines</h3>
+<p>The internet is powered by recommendations. YouTube recommends videos, Netflix recommends movies and TV shows, Amazon recommends products, Medium recommends articles.</p>
+<p>If you’re building an online store or online marketplace, chances are you’ll want to start recommending things to your customers.</p>
+<p>For that, you’ll want to look into building a recommendation engine. </p>
+<ul>
+<li><strong><a href="https://pytorch.org/torchrec/">TorchRec</a></strong> — PyTorch’s newest in-built domain library for powering recommendation engines with deep learning. TorchRec comes with recommendation datasets and models ready to try and use. Though if a custom recommendation egnine isn’t up to par with what you’re after (or too much work), many cloud vendors offer recommendation engine services.</li>
+</ul>
+<h3 id="time-series">⏳ Time Series</h3>
+<p>If your data has a time component and you’d like to leverage patterns from the past to predict the future, such as, predicting the price of Bitcoin next year (don’t try this, <a href="https://dev.mrdbourke.com/tensorflow-deep-learning/10_time_series_forecasting_in_tensorflow/#model-10-why-forecasting-is-bs-the-turkey-problem">stock forecasting is BS</a>) or a more reasonable problem of predicting electricity demand for a city next week, you’ll want to look into time series libraries.</p>
+<p>Both of these libraries don’t necessarily use PyTorch, however, since time series is such a common problem, I’ve included them here.</p>
+<ul>
+<li><a href="https://github.com/salesforce/Merlion"><strong>Salesforce Merlion</strong></a> — Turn your time series data into intelligence by using Merlion’s data loaders, pre-built models, AutoML (automated machine learning) hyperparameter tuning and more for time series forecasting and time series anomaly detection all inspired by practical use cases.</li>
+<li><a href="https://github.com/facebookresearch/Kats"><strong>Facebook Kats</strong></a> — Facebook’s entire business depends on prediction: when’s the best time to place an advertisement? So you can bet they’re invested heavily in their time series prediction software. Kats (Kit to Analyze Time Series data) is their open-source library for time series forecasting, detection and data processing.</li>
+</ul>
+<h2 id="how-to-get-a-job">👩‍💻 How to get a job</h2>
+<p>Once you’ve finished an ML course, it’s likely you’ll want to use your ML skills.</p>
+<p>And even better, get paid for them.</p>
+<p>The following resources are good guides on what to do to get one.</p>
+<ul>
+<li><strong><a href="https://www.mrdbourke.com/how-can-a-beginner-data-scientist-like-me-gain-experience/">"How can a beginner data scientist like me gain experience?"</a> by Daniel Bourke</strong> — I get the question of “how do I get experience?” often because many different job requirements state “experience needed”. Well, it turns out one of the best ways to get experience (and a job) is to: <em>start the job before you have it</em>.</li>
+<li><strong><a href="https://eugeneyan.com/writing/you-dont-need-another-mooc/">You Don’t Really Need Another MOOC</a> by Eugene Yan</strong> — MOOC stands for massive online open course (or something similar). MOOCs are beautiful. They enable people all over the world at their own pace. However, it can be tempting to just continually do MOOCs over and over again thinking “if I just do one more, I’ll be ready”. The truth is, a few is enough, the returns of a MOOC quickly start to trail off. Instead, go off the trail, start to build, start to create, start to learn skills that can’t be taught. Showcase those skills to get a job.</li>
+<li><strong>Bonus:</strong> For the most thorough resource on the internet for machine learning interviews, check out Chip Huyen’s free <a href="https://huyenchip.com/ml-interviews-book/">Introduction to Machine Learning Interviews book</a>.</li>
+</ul>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../09_pytorch_model_deployment/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 09. PyTorch Model Deployment" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              09. PyTorch Model Deployment
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../pytorch_cheatsheet/" class="md-footer__link md-footer__link--next" aria-label="Next: PyTorch Cheatsheet" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              PyTorch Cheatsheet
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 <a href="https://thangckt.github.io">thangckt</a>
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="mailto:<thanckt@gmail.com>" target="_blank" rel="noopener" title="Email to thangckt" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48H48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0L0 176z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://t.me/thangckt" target="_blank" rel="noopener" title="thangckt on Telegram" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M248 8C111.033 8 0 119.033 0 256s111.033 248 248 248 248-111.033 248-248S384.967 8 248 8Zm114.952 168.66c-3.732 39.215-19.881 134.378-28.1 178.3-3.476 18.584-10.322 24.816-16.948 25.425-14.4 1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25 5.342-39.5 3.652-3.793 67.107-61.51 68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608 69.142-14.845 10.194-26.894 9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7 18.45-13.7 108.446-47.248 144.628-62.3c68.872-28.647 83.183-33.623 92.511-33.789 2.052-.034 6.639.474 9.61 2.885a10.452 10.452 0 0 1 3.53 6.716 43.765 43.765 0 0 1 .417 9.769Z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://www.facebook.com/thangckt5" target="_blank" rel="noopener" title="thangckt on Facebook" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://www.linkedin.com/in/thangckt" target="_blank" rel="noopener" title="thangckt on Linkedin" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://orcid.org/0000-0001-9826-5397" target="_blank" rel="noopener" title="thangckt on ORCID" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M294.75 188.19h-45.92V342h47.47c67.62 0 83.12-51.34 83.12-76.91 0-41.64-26.54-76.9-84.67-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.79 360.76h-29.84v-207.5h29.84zm-14.92-231.14a19.57 19.57 0 1 1 19.57-19.57 19.64 19.64 0 0 1-19.57 19.57zM300 369h-81V161.26h80.6c76.73 0 110.44 54.83 110.44 103.85C410 318.39 368.38 369 300 369z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "navigation.indexes", "navigation.tracking", "navigation.top", "search.suggest", "toc.follow", "content.action.edit", "navigation.footer"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+        <script src="../_extend_theme/javascripts/gg_adsense.js"></script>
+      
+    
+    
+  </body>
+</html>
